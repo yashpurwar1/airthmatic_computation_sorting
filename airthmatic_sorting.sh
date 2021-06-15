@@ -9,3 +9,6 @@ echo "Entered values are a=$a, b=$b and c=$c"
 
 compute_1=$(($a+$b*$c))
 echo "a+b*c=$compute_1"
+
+compute_2=$(($a*$b+$c))
+echo "a*b+c=$compute_2"
