@@ -20,13 +20,17 @@ compute_4=`awk 'BEGIN{printf("%0.2f" , '$a'%'$b'+'$c')}'`
 echo "a%b+c=$compute_4"
 
 declare -A dict
+declare -a arr
 
 dict[compute_1]=$compute_1
 dict[compute_2]=$compute_2
 dict[compute_3]=$compute_3
 dict[compute_4]=$compute_4
 
+i=0
 for key in ${!dict[@]}
 do
-	echo $key=${dict[$key]}
+	 arr[i++]=${dict[$key]}
 done
+echo "The computed values are"
+echo ${arr[@]}
