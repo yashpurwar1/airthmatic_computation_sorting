@@ -38,3 +38,7 @@ echo ${arr[@]}
 descending_order=$(printf '%s\n' ${arr[@]} | sort -nr)
 echo "Computational results in descending oreder:"
 echo $descending_order
+
+ascending_order=$(printf '%s\n' ${arr[@]} | sort -n)
+echo "Computational results in ascending order:"
+echo $ascending_order
