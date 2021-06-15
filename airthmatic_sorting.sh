@@ -12,3 +12,6 @@ echo "a+b*c=$compute_1"
 
 compute_2=$(($a*$b+$c))
 echo "a*b+c=$compute_2"
+
+compute_3=`awk 'BEGIN{printf("%0.2f" , '$c'+'$a'/'$b')}'`
+echo "c+a/b=$compute_3"
