@@ -34,3 +34,7 @@ do
 done
 echo "The computed values are"
 echo ${arr[@]}
+
+descending_order=$(printf '%s\n' ${arr[@]} | sort -nr)
+echo "Computational results in descending oreder:"
+echo $descending_order
